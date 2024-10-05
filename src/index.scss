@@ -1,0 +1,29 @@
+.tracked-mounts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    &__mount {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        border-radius: 25px;
+        border: 2px solid;
+
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        &--link {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &--selected {
+            background-color: green;
+        }
+    }
+
+
+
+}
+

@@ -74,6 +74,10 @@ for div in divs:
 		if style_attr:
 			mount_image = extract_text(style_attr, '"', '"')
 
+	if source_type == "In-Game Sho":
+		source_type = "In-Game Shop"
+		source_location = "P2W"
+
 	mounts[mount_name] = {
 		"source_type": source_type, 
 		"source": source_location,

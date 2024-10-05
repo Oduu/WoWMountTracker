@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Mount Scraper files
+mount_scraper/Lib/
+mount_scraper/Scripts/
+mount_scraper/freeformatter-out.html
+mount_scraper/pyvenv.cfg
+mount_scraper/wowhead.html
