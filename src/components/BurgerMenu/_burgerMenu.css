@@ -1,0 +1,67 @@
+/* Burger Menu Container */
+.burger-menu-container {
+  position: relative;
+}
+
+/* Burger Icon */
+.burger-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.burger-icon div {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Burger Icon Open State (Transforms) */
+.burger-icon.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-icon.open .line2 {
+  opacity: 0;
+}
+
+.burger-icon.open .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hidden Menu */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu.open {
+  display: block;
+}
+
+/* Menu Links */
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
